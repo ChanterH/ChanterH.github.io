@@ -1,4 +1,8 @@
-# 本文件包含采集数据的说明  
+# 本文件包含采集数据相关说明  
+---
+### Synchronous acquisition.py用于上位机的生理与视频信号的同步记录（搭配多传感器平台使用）  
+---
+# 各模态数据格式简介如下  
 ## 1.以时间命名的视频数据.mkv  
 ## 2.EDA_data  
     Timestamp	EDA_Value	Abs_Value
