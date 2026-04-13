@@ -1,6 +1,18 @@
-# 慕清诗的博客 :link: https://ChanterH.github.io 
-### :page_facing_up: [0](https://ChanterH.github.io/tag.html) 
-### :speech_balloon: 0 
-### :hibiscus: 0 
-### :alarm_clock: 2026-04-13 16:58:44 
-### Powered by :heart: [Gmeek](https://github.com/Meekdai/Gmeek)
+# 本文件包含采集数据相关说明  
+---
+### Synchronous acquisition.py用于上位机的生理与视频信号的同步记录（搭配多传感器平台使用）  
+---
+# 各模态数据格式简介如下  
+## 1.以时间命名的视频数据.mkv  
+## 2.EDA_data  
+    Timestamp	EDA_Value	Abs_Value
+    时间戳	    测量值	    测量值与基准值差的绝对值 
+## 3.EEG_data  
+    Timestamp	Delta	Theta	LowAlpha	HighAlpha	LowBeta	HighBeta	LowGamma	MiddleGamma	Beta/(Theta+Alpha) Ratio
+    时间戳	    各频段数据  以及对专注度判断更有价值的比值数据
+## 4.PPG_data  
+    Timestamp	PPG_wave
+    时间戳	    脉搏波信号数据
+## 5.SPO2_HR_data  
+    Timestamp	SPO2	Heart rate
+    时间戳	    血氧含量	 心率
